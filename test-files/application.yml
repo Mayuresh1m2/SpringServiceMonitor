@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: my-cool-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydatabase
+  redis:
+    host: localhost
+  kafka:
+    bootstrap-servers: localhost:9092

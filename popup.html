@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spring Service Monitor</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>Spring Service Monitor</h1>
+  <p>Upload your Spring Boot configuration file to get started.</p>
+
+  <input type="file" id="fileInput" accept=".yml,.yaml,.properties">
+
+  <div id="results" style="display:none;">
+    <h2>Detected Dependencies</h2>
+    <ul id="dependencyList"></ul>
+    <button id="downloadCompose">Download Docker Compose</button>
+    <button id="downloadDiagram">Download Diagram</button>
+  </div>
+
+  <script src="src/app.js"></script>
+  <script src="src/lib/js-yaml.min.js"></script>
+  <script src="src/ConfigParser.js"></script>
+  <script src="src/DependencyMap.js"></script>
+  <script src="src/DependencyDetector.js"></script>
+  <script src="src/ComposeGenerator.js"></script>
+  <script src="src/DiagramGenerator.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
