@@ -5,8 +5,5 @@
   "description": "Generate Docker Compose and Draw.io diagrams from Spring Boot config files.",
   "action": {
     "default_popup": "popup.html"
-  },
-  "content_security_policy": {
-    "extension_pages": "script-src 'self' 'sha256-p0355KVze+aYC7xX3LZFu0mcNAgvBGMPUdv/ghsOb4I='; object-src 'self'"
   }
 }
