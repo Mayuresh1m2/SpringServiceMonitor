@@ -76,7 +76,7 @@
           delete compose.services[serviceName].depends_on;
       }
 
-      return jsyaml.dump(compose);
+      return app.jsyaml.dump(compose);
     }
   };
 
