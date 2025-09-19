@@ -1,4 +1,6 @@
 (function(app) {
+  const { jsyaml } = app;
+
   const ConfigParser = {
     parseYAML: function(content) {
       try {
